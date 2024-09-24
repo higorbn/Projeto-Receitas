@@ -1,0 +1,127 @@
+/* Estilo da área principal que contém as receitas */
+.receitas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 21px;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 80px;
+    background-color: #d28b73;
+}
+
+header {
+    padding: 1px;
+    margin: 0;
+    background-color: #000000; 
+
+   
+}
+.container {
+    padding: 20px; 
+    margin-bottom: 0; 
+}
+
+/* Painel de cada receita */
+.receita {
+    background-color: rgb(233, 220, 147);
+    border: 1px solid #d3b380;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+}
+
+/* Nome da receita */
+.receita h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Imagem do prato */
+.receita img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Lista de itens */
+.receita ul {
+    list-style-type: disc;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+/* Modo de preparo */
+.modo-preparo {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Rodapé fixo no fim da página */
+footer {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: #d28b73;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menu de navegação */
+nav {
+    text-align: center;
+    margin: 10px;
+}
+
+nav a {
+    color: #d28b73;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    background-color: #000000;
+    color: #d28b73;
+    text-align: center;
+    padding: 5px 0;
+    position: fixed;
+    bottom: 0;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .receitas-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .receita {
+        width: 90%; 
+    }
+}

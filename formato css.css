@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #d28b73; 
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+
+header {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+nav .menu {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+nav .menu:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para logotipo */
+.logotipo {
+    width: 100px; 
+    height: auto;
+    margin: 20px auto;
+}
+
+/* Estilos */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+main p {
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+}
+
+
+footer {
+    width: 100%;
+    background-color: rgb(252, 252, 252);
+    color: #d28b73(214, 24, 24, 0.897);
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 1rem;
+}
